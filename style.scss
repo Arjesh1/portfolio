@@ -1,0 +1,584 @@
+$color-blue:linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #24E29E 26.3%, rgba(16, 155, 105, 0.384758) 52.2%, rgba(176, 235, 214, 0.68) 90.04%, rgba(255, 255, 255, 0) 100%);
+$color-button:#0EFFF1;
+$font-stact: "Montserat", sans-serif;
+$text-color:white;
+$link-color:red;
+$border-color:black;
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }/*# sourceMappingURL=style.css.map */
+  
+  
+  /* default styles */
+  ul{
+    list-style: none;
+  }
+  
+  body{
+    min-height: 100vh;
+    line-height: 1.5;
+  }
+  
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .flex{
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .grid{
+    display: grid;
+    gap: 1rem;
+    
+  }
+
+  section{
+    padding: 4rem;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .title{
+    font-size: 2rem;
+}
+
+// header
+.primary-header{
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 1rem 2rem;
+    background: $border-color;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    
+
+    .logo{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        gap: 2.3rem;
+
+        div{
+            &:nth-child(1){
+                h1{
+                    font-size: 1.8rem;
+                }
+            }
+    
+            &:nth-child(2){
+                h1{
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+            }
+        }
+        .line{
+            &::before{
+                content: "";
+                background:$link-color;
+                height: 80%;
+                width: 3px;
+                left: 43.5%;
+                top: 10%;
+                position: absolute;
+            }
+        }
+
+    }
+
+   .right{
+    .navigation{
+        padding: 0;
+        margin: 0;
+        gap: 2.5rem;
+
+        li{
+            a{
+                &:hover{
+                    color: $link-color;
+                }
+            }
+        }
+
+    }
+   } 
+
+}
+
+// hero section
+.section1{
+    background: $color-blue;
+    margin: 8rem auto 3rem auto;
+    padding: 0 2rem;
+    width: 90vw;
+    height: 60vh;
+    grid-template-areas: "one two";
+
+    .left{
+        grid-area: one;
+        justify-content: center;
+        align-items: center;
+        margin-top: -10rem;
+        margin-left: -14rem;
+
+        img{
+            height: 100%;
+        }
+    }
+
+    .right{
+        grid-area: two;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.8rem;
+
+        div{
+            flex-direction: column;
+            gap: 0.6rem;
+
+            .name{
+                font-size: 4rem;
+                font-weight: bold;
+                color: black;
+
+                .lname{
+                    color: red;
+                }
+            }
+
+            .tag{
+                color: black;
+                font-size: 2.2rem;
+            }
+        }
+
+        button{
+            border:none;
+            padding:0.8rem 1.2rem;
+            border-radius: 2rem;
+            margin: 1rem 0;
+            cursor: pointer;
+            background: black;
+            color: white;
+            font-size: 1rem;
+
+            a{
+                span i {
+                    color: red;
+                    font-weight: 900;
+                    font-size:1.5rem ;
+                    padding-left: 2px;
+                }
+            }
+        }
+
+    }
+
+}
+
+// banner section
+.section2{
+    .info-container{
+        margin: auto;
+        padding: 2rem;
+        max-width: 85%;
+        min-height: 7rem;
+        border: 2px solid $border-color;
+        border-radius:100px;
+        justify-content: center;
+        align-items: center;
+
+        .info-lists{
+            width: 100%;
+            color: black;
+            justify-content: space-around;
+            align-items: center;
+
+            .info-content{
+                justify-content: center;
+                align-items: center;
+        .icon-container{
+            width: 4rem;
+            height: 4rem;
+            background: #12B9AF;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+
+            i{
+                font-size: 1.8rem;
+                color: white;
+            }
+        }
+
+    span{
+        h5{
+            letter-spacing: 2px;
+            font-size: 1.4rem;
+        }
+
+        p{
+            color:#0b3d3a ;
+            font-size: 1.2rem;
+        }
+    }
+
+            }
+
+            .info-divider{
+                width: 2px;
+                height: 35px;
+                background: rgb(2, 1, 1);
+
+            }
+        }
+    }
+
+}
+
+// skills section
+.section3{
+    .skills-container{
+        gap: 8rem;
+        justify-content: center;
+
+        div{
+            flex-direction: column;
+            align-items: center;
+            font-weight: 700;
+        }
+
+        i{
+            font-size: 4rem;
+        }
+
+        .fa-html5{
+            color: gray
+        }
+
+        .fa-html5:hover{
+            color: orange;
+        }
+
+        .fa-css3-alt{
+            color: gray;
+        }
+
+        .fa-css3-alt:hover{
+            color: rgb(8, 52, 133);
+        }
+
+        .fa-js{
+            color: grey;
+        }
+
+        .fa-js:hover{
+            color: yellow;
+        }
+
+        .fa-react{
+            color:grey;
+        }
+
+        .fa-react:hover{
+            color: #61DBFB;
+        }
+
+
+        .fa-php{
+            color:grey;
+        }
+
+        .fa-php:hover{
+            color: #5B58E7;
+        }
+
+
+    }
+}
+
+// project section
+.section4{
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    
+
+    .project-container{
+        width: 100%;
+        padding: 3rem 2rem 0 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2.5rem;
+        justify-content: space-between;
+    
+
+    .project-card{
+        cursor: pointer;
+        flex-direction: column;
+        box-shadow: 0 4px 12px 4px rgb(0, 0, 0, 0.3);
+
+        .top{
+            img{
+                width: 100%;
+                height: 250px;
+            }  
+                
+        }
+
+        .bottom{
+            margin-top: 1.2rem;
+            padding: 1rem;
+            
+            p{
+                font-size: 1.3rem;
+                &:nth-child(2){
+                    margin-top: 1.3rem;
+                    font-weight: bold;
+                }
+
+            }
+        }
+    }
+
+   }
+
+}
+
+// about me section
+.section5{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .about-container{
+        padding: 3rem;
+    
+
+     .left{
+        width: 50%;
+        padding: 0 2rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    
+
+        .bg{
+        width: 95%;
+        height: 65%;
+        background: $color-blue;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        }
+
+        img{
+        width: 100%;
+        }
+   
+       }
+  
+  .right{
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    p{
+        &:nth-child(2) {
+            font-weight: 500;
+        }
+
+        &:nth-child(3) {
+            font-weight: 300;
+        }
+      }
+
+      a{
+        color: $link-color;
+        text-decoration: underline;
+      }
+
+      > div{
+        flex-direction: column;
+
+    .tag{
+        font-weight: 500;
+    }
+
+    div{
+        display: flex;
+        gap: 3rem;
+
+        span{
+            padding: 0,5rem 0.7rem;
+            border-radius: 0.8rem;
+
+            &:hover{
+                cursor: pointer;
+                background: rgb(189, 188,188);
+                color: white;
+            }
+        }
+
+        }
+
+      }
+
+
+  }
+
+
+    }
+
+}
+
+// get in touch
+.section6{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .socials{
+        padding: 4rem;
+        gap: 8rem;
+
+        i{
+            font-size: 3.8rem;
+   
+        }
+
+        .fa-facebook-f{
+            color: grey;
+        }
+
+        .fa-facebook-f:hover{
+            color: #3b5998;
+        }
+
+        .fa-github{
+            color: grey;
+        }
+
+        .fa-github:hover{
+            color:black;
+        }
+
+        .fa-linkedin-in{
+            color: grey;
+        }
+
+        .fa-linkedin-in:hover{
+            color:  #007ba7;
+        }
+
+        .fa-twitter{
+            color: grey;
+        }
+
+        .fa-twitter:hover{
+            color:  	#1DA1F2;
+        }
+
+
+
+
+    }
+
+    .email-section{
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+    .email{
+        background: $border-color;
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1.5rem;
+        border-radius: 100px;
+        gap: 1rem;
+        cursor: pointer;
+
+        a{
+            color: white;
+
+        }
+
+        .send{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background: #12B9AF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    }
+    }
+}
+
+
+// footer
+footer{
+    background: black;
+    color: white;
+
+    .footer-container{
+        max-width: 1440px;
+        flex-direction: column;
+        margin: 0 auto;
+
+        .footer-top{
+            justify-content: space-evenly;
+            align-items: flex-start;
+            padding: 4rem;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+
+            div{
+                flex-direction: column;
+                justify-content: center;
+                h3{
+                    text-transform: uppercase
+                }
+
+            ul{
+                flex-direction: column;
+                gap: 0.5rem;
+
+                li:hover{
+                    color: $color-blue;
+                    cursor: pointer;
+                }
+            }
+            }
+        }
+
+        .footer-bottom{
+            justify-content: center;
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+
+
