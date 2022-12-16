@@ -304,6 +304,14 @@ $border-color:black;
             color: #5B58E7;
         }
 
+        .fa-sass{
+            color:grey;
+        }
+
+        .fa-sass:hover{
+            color: #e649d1;
+        }
+
 
     }
 }
@@ -411,8 +419,14 @@ $border-color:black;
       }
 
       a{
-        color: $link-color;
-        text-decoration: underline;
+        color: white;
+        font-weight: bold;
+        font-size: large;
+        background: #41C7BF;
+        width: 10rem;
+        padding: 5px 5px 5px 13px;
+        border-radius: 50px;
+        justify-content: center;
       }
 
       > div{
@@ -421,7 +435,7 @@ $border-color:black;
     .tag{
         font-weight: 500;
     }
-
+ 
     div{
         display: flex;
         gap: 3rem;
@@ -432,8 +446,9 @@ $border-color:black;
 
             &:hover{
                 cursor: pointer;
-                background: rgb(189, 188,188);
-                color: white;
+                background: $color-button;
+                padding: 5px;
+                color: rgb(5, 5, 5);
             }
         }
 
@@ -558,12 +573,14 @@ footer{
                 flex-direction: column;
                 justify-content: center;
                 h3{
-                    text-transform: uppercase
+                    text-transform: uppercase;
+                    margin-left: 2rem;
                 }
 
             ul{
                 flex-direction: column;
                 gap: 0.5rem;
+                justify-content: center;
 
                 li:hover{
                     color: $color-blue;
