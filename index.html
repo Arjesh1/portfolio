@@ -11,8 +11,14 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <!-- dark mode -->
+    <input type="checkbox" id="darkMode" class="dark-mode-checkbox">
+
 
     <div class="wrapper">
+        <label for="darkMode">
+            <i class="fa-solid fa-toggle-on dark-mode-toggle"></i>
+        </label>
 
         <!-- navbar -->
         <header class="primary-header flex">
@@ -27,6 +33,8 @@
            </div> 
 
            <div class="right">
+            <input type="checkbox" id="check">
+            <label for="check" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
             <ul class="navigation flex">
                 <li>
                     <a href="#home">Home</a>
@@ -175,7 +183,7 @@
  <h1 class="title">My Projects</h1>
 
  <div class="project-container grid">
-     <div class="project-card flex">
+    <a href="https://arjesh1.github.io/sneaky-ecommerce/"><div class="project-card flex">
         <div class="top">
             <img src="assets/eccomerce.PNG" alt="">
         </div>
@@ -186,17 +194,21 @@
         </div>
 
      </div>
+     </a>
+
+     <a href="https://arjesh1.github.io/Travel_Blog/">
      <div class="project-card flex">
         <div class="top">
-            <img src="assets/eccomerce.PNG" alt="">
+            <img src="assets/travel.PNG" alt="">
         </div>
 
         <div class="bottom">
             <p>Dec 15, 2022</p>
-            <p>Ecommerce website developed using HTML and CSS</p>
+            <p>Travel Blog website developed using HTML and CSS</p>
         </div>
 
      </div>
+    </a>
      <div class="project-card flex">
         <div class="top">
             <img src="assets/eccomerce.PNG" alt="">
@@ -322,6 +334,15 @@
                 </div>
             </div>
          </footer>
+
+         <!-- scroll to top btn -->
+
+         <div class="scroll-to-top">
+            <a href="#" class="scroll-btn">
+
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+         </div>
 
 
 
